@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "total_entities_evaluated": 30,
+    "benign_baseline_entities": 25,
+    "compromised_entities": 5,
+    "features_extracted": [
+      "temporal_entropy",
+      "off_hours_ratio",
+      "ip_diversity_ratio",
+      "auth_failure_rate",
+      "log_egress_bytes",
+      "privilege_action_rate",
+      "geo_dispersion_count"
+    ],
+    "decision_threshold": 0.65
+  },
+  "performance_metrics": {
+    "roc_auc_dual_ensemble": 1.0,
+    "roc_auc_isolation_forest": 1.0,
+    "roc_auc_pca_reconstruction": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "true_positives": 5,
+    "false_positives": 0,
+    "true_negatives": 25,
+    "false_negatives": 0
+  },
+  "computational_efficiency": {
+    "model_fit_latency_ms": 72.41,
+    "inference_latency_per_entity_us": 4248.13,
+    "stress_throughput_entities_per_sec": 123.8
+  }
+}
